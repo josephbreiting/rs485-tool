@@ -1,6 +1,6 @@
 # serial/rs485 tools | linux
 
-bootdisc of my barebones rs485/serial debugging system based on linux. Nothing other than what is needed, no X, no fluff just serial/rs485 communication tools that should run on any potato.
+bootdisc of my barebones rs485/serial debugging system based on linux. Nothing other than what is needed, no X, no fluff, < 80 mb, just serial/rs485 communication tools that should run on any potato with a focus on serial and modbus communication.
 
 ## rs485/rs232 tools
 minicom................serial client with special support for rs485 (Setup half-duplex rs485 adapter like the CC-USB-RS485-150U)
