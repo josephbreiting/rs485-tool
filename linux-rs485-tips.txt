@@ -1,0 +1,3 @@
+# some rs485 usb adapters need to have rs485 mode enables, you can do this with the minicom program settings
+# normally when you exit minicom it will reset the rs485, disabling rs485 mode. if you want it stay on to use with another program
+# exit minicom WITHOUT reseting the connection
