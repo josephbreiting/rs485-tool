@@ -1,6 +1,7 @@
-# first if the manufacter has private software, use this for initail wiring/testing first,  who says they are gonna follow any specifications to the t, so do what they recommend to get started.
-# not all modbus slaves have all modbus commands, an example is if you try to scan for a modbus device with the "slave id" function, some do not know that function.
+# first if the manufacter has private software, use this for initail wiring and testing first,  who says they are gonna follow any specifications to the t, so do what they recommend to get started.
+# not all modbus slaves have all modbus commands, an example is if you try to scan for a modbus device with the "slave id" command, some devices do not have that function.
 # if your device has any modbus documentation the example messages are a good way to verify a connection is working.
-# are you sure your rs485 adapter/interface is wired properly and rs485 mode is enable if it need to be.  it is worth alot to have a rs485 device that has indicating lights for rx and tx.
-# if your modbus slave devie has a crc setting, try changing it.  I have a device by default swaps the 16bit crc byte order for their private software, but break it for pretty much the rest.
+# are you sure your rs485 adapter/interface is wired properly and rs485 mode is enable if it need to be.  Tt is worth alot to have a rs485 device that has indicating lights for rx and tx.
+# if your modbus device has a crc setting, try changing it.  I have a device that by default swaps the 16bit crc byte order for their private software,  meaning normal modbus software will not work until the setting is changed.
 # modbus address are usually in hex, it can be very easy to forget that 1000 in the devices modbus documentation is actually 4096 in decimal and programs often need the right fomatting (1000 in hex is written as 0x1000)
+# are you sure your uart setting are correct, some device will still communicate garbage bytes if the port settings are incorrect.  A device mightseem to communicate and give a respond at 19200 bps, but the device actually requires 9600 bps for the data to be correct.
