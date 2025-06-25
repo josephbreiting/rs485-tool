@@ -24,5 +24,6 @@ bc......................calculator
 ## helpers
 ```
 usr-w610.sh.............script to find and help connect to a usr-w610 device on a local network
-parse-modbus-msg.sh.....script parses either tx or rx modbus comands for valilidity
+serial-scanner.sh.......script to try and find most likely serial port settings  
+modbus-parser.sh........script parses either tx or rx modbus comands for valilidity
 ```
