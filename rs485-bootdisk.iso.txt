@@ -1,1 +1,27 @@
-# iso of live system for rs485 hacking and troubleshoting
+# live system for uart/rs485/modbus hacking and troubleshooting
+# I use a 13 year old laptop as a dedicated serial debugging tool
+
+# GOAL: from boot to work in < 5 sec
+# GOAL: internet and shared folders supoort
+# GOAL: use to debug my dc inverter's status display (no documentaion at all)
+# GOAL: debug solar charge controller (came with a modbus usb adapter that requires rs485 mode in linux)
+# GOAL: debug dc20d mkii generator controller (has good documents, but does not seem to follow work out of the box, needed to use thier software)
+# GOAL: debug usr-w610 operation and configurations (works good for sniffing data from uart/modbus transmissons)
+        originally i would just wire another slave onto the bus, but that does not distinguish from rx or tx, it is just a continuous data stream
+        i found that i can easily use 2 usr-w610 devices to sniff just the rx or just the tx data streams by simply swapping the server/client placement.
+        this sped up decoding the inverters status display data stream alot for me.
+
+# supports uart/rs485/modbus comunication
+# scanning port settings (serial-scanner.sh) 
+# modbus message validation (modbus-parser.sh)
+# support for the usr-w610 serial to wifi converter (usr-w610.sh)
+
+# dvdram automounting via autofs
+# usb-storage automounting via mdev
+# network-shares automounting via autofs
+
+# text editor
+# serial terminal
+# terminal multiplexer
+# virtual comm port
+# wireless networking
