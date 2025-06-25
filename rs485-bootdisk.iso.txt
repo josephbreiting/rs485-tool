@@ -2,11 +2,13 @@
 # I use a 13 year old laptop as a dedicated serial debugging tool
 
 # GOAL: from boot to work in < 5 sec
+# GOAL: provide good help and program examples for usage
 # GOAL: internet and shared folders supoort
+# GOAL: replace arduino serial monitor, which is where i learned the usefulness of serial communication while using their microcontrollers
 # GOAL: use to debug my dc inverter's status display (no documentaion at all)
 # GOAL: debug solar charge controller (came with a modbus usb adapter that requires rs485 mode in linux)
-# GOAL: debug dc20d mkii generator controller (has good documents, but does not seem to follow work out of the box, needed to use thier software)
-# GOAL: debug usr-w610 operation and configurations (works good for sniffing data from uart/modbus transmissons)
+# GOAL: debug dc20d mkii generator controller (has good documents, but does not seem to work out of the box, needed to use their software to figure out crc settings)
+# GOAL: debug usr-w610 operation and configurations for linux systems (https://device.report/manual/4122285) (works good for sniffing data from uart/modbus transmissons)
         originally i would just wire another slave onto the bus, but that does not distinguish from rx or tx, it is just a continuous data stream
         i found that i can easily use 2 usr-w610 devices to sniff just the rx or just the tx data streams by simply swapping the server/client placement.
         this sped up decoding the inverters status display data stream alot for me.
